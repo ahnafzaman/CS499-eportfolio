@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Database Enhancement</title>
+</head>
+<body>
+  <h1>Milestone 4: Databases</h1>
+
+  <h2>Original Artifact</h2>
+  <p><a href="original-code.zip">Download original code</a></p>
+
+  <h2>Enhanced Artifact</h2>
+  <p><a href="milestone4-code.zip">Download enhanced code</a></p>
+
+  <h2>Narrative</h2>
+  <p>For this milestone, I continued enhancing the Inventory Management mobile app I’ve been working on. This week I focused on improving the way the app interacts with the database. I updated the item search feature so that it now checks the actual database every time instead of using a pre-loaded map which has the potential of get out of sync. Before making this update, when I deleted an item from the app and then tried searching for it, the app would still say it was found. So I re-wrote the search logic to use a live query that reflects the actual state of the database.</p>
+  <p>I picked this artifact again for this section because it already had some solid database functionality, but this enhancement gave me a chance to make it better. I added a new method called getItemByName() inside DatabaseHelper.java, which uses a SQL SELECT query to check for an item by name. Then, I used that method in the activity class that handles the search button. Besides fixing the bug, it also made the app more reliable overall. Now the user always real time info based on what’s actually stored in the SQLite database.</p>
+  <p>With this process of enhancing I got hands-on experience with writing custom queries and making sure the app's behavior always reflects the data layer. One of the main things I learned during this process is how important it is to avoid caching when the data can change dynamically. I also saw how a small database bug can lead to confusing user experience if we are not careful. Fixing this made the app more reliable and professional.</p>
+</body>
+</html>
