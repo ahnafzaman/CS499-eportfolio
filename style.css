@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #f8f9fa;
+  color: #212529;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: #343a40;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 1.2em;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.back-link {
+  margin-bottom: 20px;
+  display: inline-block;
+  color: #007bff;
+}
+
+video {
+  max-width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+}
